@@ -1,0 +1,30 @@
+/* PORTFOLIO */
+#portfolio ul li {
+  margin-bottom: 15px;
+}
+#portfolio .social-media-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#portfolio .social-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+#portfolio .social-link i {
+  margin-right: 0.5rem;
+}
+#portfolio .social-link:hover {
+  color: #0072b1; /* warna untuk LinkedIn */
+}
+
+/* MODAL */
+/* .modal-sheet .modal-dialog {
+  width: 380px;
+  transition: bottom 0.75s ease-in-out;
+}
+.modal-sheet .modal-footer {
+  padding-bottom: 2rem;
+} */
