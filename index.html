@@ -62,9 +62,13 @@
             </li>
             <li>
               <!-- Button trigger modal -->
-              <a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalSignin">
+              <a type="button" id="button-masuk" data-bs-toggle="modal" data-bs-target="#modalSignin">
                 <i class="fa-solid fa-right-to-bracket fs-5 me-2"></i>
                 Masuk
+              </a>
+              <a type="button" id="button-keluar" class="d-none">
+                <i class="fa-solid fa-right-to-bracket fs-5 me-2" style="transform: rotate(180deg);"></i>
+                <span id="username-show"></span>
               </a>
             </li>
           </ul>
@@ -1016,33 +1020,30 @@
             <form class="">
               <div class="form-floating mb-3">
                 <input
-                  type="email"
+                  type="text"
                   class="form-control rounded-3"
-                  id="floatingInput"
-                  placeholder="nama@contoh.com" />
-                <label for="floatingInput">Alamat email</label>
+                  id="loginUsername"
+                  placeholder="nama" />
+                <label for="loginUsername">Username</label>
               </div>
               <div class="form-floating mb-3">
                 <input
                   type="password"
                   class="form-control rounded-3"
-                  id="floatingPassword"
+                  id="loginPassword"
                   placeholder="Kata Sandi" />
-                <label for="floatingPassword">Kata Sandi</label>
+                <label for="loginPassword">Kata Sandi</label>
               </div>
-              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">
-                Daftar
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="button" id="btn-login-masuk">
+                Masuk
               </button>
-              <small class="text-body-secondary">
-                Dengan mengklik Daftar, Anda setuju dengan ketentuan penggunaan.
-              </small>
               <hr class="my-4" />
               <h2 class="fs-5 fw-bold mb-3">Atau gunakan pihak ketiga</h2>
-              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="button">
                 <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook" /></svg>
                 Daftar dengan Facebook
               </button>
-              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="button">
                 <svg class="bi me-1" width="16" height="16"><use xlink:href="#github" /></svg>
                 Daftar dengan GitHub
               </button>
@@ -1072,5 +1073,6 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/login.js"></script>
   </body>
 </html>
