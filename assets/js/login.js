@@ -18,8 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       localStorage.setItem("login-username", username);
-      alert("Login successfull!");
-      window.location.reload();
+      Swal.fire({
+        title: "Login successfull!",
+        text: "Page will reload soon!",
+        icon: "success"
+      }).then(res => {
+        window.location.reload();
+      });
     });
   }
 
